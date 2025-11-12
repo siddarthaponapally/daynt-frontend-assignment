@@ -9,7 +9,7 @@ const App = () => {
   const [milesrun,setMilesRun] = useState('')
 
   const getData = async (req,res) => {
-    const url = "https://daynt-backend-assignment.onrender.com//runnerboard/allrunners" ;
+    const url = "https://daynt-backend-assignment.onrender.com/runnerboard/allrunners" ;
     const options = {
       method : "GET"
     }
@@ -25,7 +25,7 @@ const App = () => {
 
   const onHandleForm = async(e) => {
     e.preventDefault()
-    let url = "https://daynt-backend-assignment.onrender.com//add-runnerboard"
+    let url = "https://daynt-backend-assignment.onrender.com/add-runnerboard"
     let options = {
       method : "POST",
       headers : {
@@ -56,7 +56,7 @@ const App = () => {
 
 
   const onDelete = async(id) => {
-    const url = `https://daynt-backend-assignment.onrender.com//runnerboard/deleterunner/${id}`
+    const url = `https://daynt-backend-assignment.onrender.com/runnerboard/deleterunner/${id}`
     const options = {
       method : "DELETE",
       headers : {
