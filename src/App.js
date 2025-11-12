@@ -25,7 +25,7 @@ const App = () => {
 
   const onHandleForm = async(e) => {
     e.preventDefault()
-    let url = "https://daynt-backend-assignment.onrender.com/add-runnerboard"
+    let url = "https://daynt-backend-assignment.onrender.com/runnerboard/add-runnerboard"
     let options = {
       method : "POST",
       headers : {
